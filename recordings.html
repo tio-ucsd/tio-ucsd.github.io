@@ -1,0 +1,575 @@
+<!DOCTYPE HTML>
+<!--
+	Copyright (c) 2024, The Intermission Orchestra at UC San Diego.
+-->
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <!-- Google tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXFW5Z53DW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PXFW5Z53DW');
+    </script>
+
+    <!-- TIO metadata -->
+    <title>Recordings | Intermission Orchestra at UC San Diego</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfcfc" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#272727" />
+    <meta name="description" content="The Intermission Orchestra is a student-run organization dedicated to playing music from video games, anime, and films. We hold concerts at the end of every quarter and perform at events such as the Triton Gaming Expo, Winter GameFest, and Animefest.">
+    <meta name="keywords" content="The Intermission Orchestra, The Intermission Orchestra at UCSD, Intermission Orchestra, Intermission Orchestra at UCSD, TIO, TIO at UCSD, TIOatUCSD, UC San Diego, University of California San Diego, UCSD, UCSD Music, Music, Video Games, Video Game Music, Anime, Anime Music, Films, Film Music, Video Game Orchestra, Game Music Orchestra, Anime Orchestra, Anime Music Orchestra, Film Music Orchestra, Student Organization, Student Org, Org, Music Org, Student Orchestra, Student-run Orchestra, Ensemble, Symphonic Orchestra, Music Club, Music Club UCSD, UCSD Organization">
+    <script>
+        const colorMode = () => { 
+            // if localStorage preference exists
+            const localTheme = localStorage.getItem('theme');
+            if (localTheme) {
+                return localTheme;
+            }
+            // if OS preference exists
+            const mql = window.matchMedia('(prefers-color-scheme: dark)');
+            if (typeof mql.matches === 'boolean') {
+                return mql.matches ? 'dark' : 'light';
+            }
+            return 'light';
+        };
+        // set theme based on colorMode()
+        document.documentElement.setAttribute('data-theme', colorMode());
+    </script>
+    <link rel="icon" href="./images/TIO_profile2-1-circle.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,400,400i,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,400,400i,600">
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/recordings.min.css" />
+    <style>
+        .scrolly-section {
+            padding-top: 0.5em;
+            padding-bottom: 0;
+        }
+    </style>
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/noscript.css" />
+    </noscript>
+    <script defer src="https://kit.fontawesome.com/762f049bb9.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="left-sidebar is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div role="banner" id="header">
+            <div id="header-background"></div>
+            <!-- Inner -->
+            <div class="inner">
+                <header>
+                    <h1><a href="./" id="logo"><img src="./images/banner_white_transparent.png"
+                                alt="Intermission Orchestra logo" height=auto width="270px"></a></h1>
+                    <a href="#main" class="skip-to-main-content-link">Skip to content</a>
+                </header>
+            </div>
+            <!-- Nav -->
+            <nav role="navigation" id="nav">
+                <a href="./"><img id="nav-logo" src="./images/logo-light.png" alt="Intermission Orchestra logo"></a>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./upcoming.html">Upcoming</a></li>
+                    <li><a href="./recordings.html" aria-current="page">Recordings</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div> <!-- End of Header -->
+
+        <!--Dark mode toggle-->
+        <div id="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                    <div id="letter-light"><i class="fa-solid fa-a"></i></div>
+                    <div id="letter-dark"><i class="fa-solid fa-a"></i></div>
+                </div>
+            </label>
+        </div>
+
+        <!-- Main -->
+        <main role="main" class="wrapper style1 light-edition" id="dark-mode-toggle">
+
+            <div class="container">
+                <div class="row gtr-500">
+                    <!-- Sidebar -->
+                    <div class="col-3 col-12-mobile" id="sidebar">
+                        <hr class="first" />
+                        <section>
+                            <header>
+                                <h4>Watch more</h4>
+                            </header>
+                            <p style="font-size: medium;"><a href="https://www.youtube.com/IntermissionOrchestraatUCSD" target="_blank"
+                                class="button">YouTube &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a></p>
+                            <p style="font-size: medium;"><a href="https://www.youtube.com/@TIOatUCSD/streams" target="_blank"
+                                class="button">Streams &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a></p>
+                            <p style="font-size: medium;"><a href="https://www.twitch.tv/IntermissionUCSD" target="_blank"
+                                class="button">Twitch &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a></p>
+                                <figure id="tio-noface">
+                                    <img src="./images/tio_noface.png" alt="No-Face playing tambourine" />
+                                    <figcaption><em>No-Face</em>, illust. Sara Ye</figcaption>
+                                </figure>
+                        </section>
+                    </div>
+
+                    <!-- Center stuff -->
+                    <div class="col-9 col-12-mobile imp-mobile" id="content" style="margin-top: -1em">
+                        <article id="main">
+                            <header>
+                                <h2><a
+                                        href="https://www.youtube.com/IntermissionOrchestraatUCSD"
+                                        target="_blank">Recordings</a></h2>
+                            </header>
+
+
+
+
+
+
+
+                            <div class="accordion">
+                                <details id="20232024">
+                                    <summary>2023 – 2024</summary>
+                                    <div id="2024spring" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-Kjbj3Qaz9OHuWOfhuwOKC5"
+                                                target="_blank"><strong>Spring 2024 |</strong> June 4, 2024</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-Kjbj3Qaz9OHuWOfhuwOKC5"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2024winter" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-LXF0MFycEwUzYba5D8LhUA"
+                                                target="_blank"><strong>Winter 2024 |</strong> March 16, 2024</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-LXF0MFycEwUzYba5D8LhUA"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2023fall" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><strong>Fall 2023 |</strong> December 9, 2023</h4>
+                                        <div><p style="padding: 20px">Playlist coming soon...</p></div>
+                                    </div>
+                                </details>
+                                <details id="20222023">
+                                    <summary>2022 – 2023</summary>
+                                    <div id="2023spring" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-I6HLaq7Z31R5YPFX_DwlS6"
+                                                target="_blank"><strong>Spring 2023 |</strong> June 4, 2023</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-I6HLaq7Z31R5YPFX_DwlS6"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2023winter" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-K4csDV4-h9QJyunpht51k0"
+                                                target="_blank"><strong>Winter 2023 |</strong> March 18, 2023</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-K4csDV4-h9QJyunpht51k0"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2022fall" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-LH0UqQwyrDEcOIvHQF2Lag"
+                                                target="_blank"><strong>Fall 2022 |</strong> December 2, 2022</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-LH0UqQwyrDEcOIvHQF2Lag"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </details>
+                                <details id="20212022">
+                                    <summary>2021 – 2022</summary>
+                                    <div id="2022spring" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-JfQ0Nk0mA4Qk4-B01gmlQs"
+                                                target="_blank"><strong>Spring 2022 |</strong> June 4, 2022</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-JfQ0Nk0mA4Qk4-B01gmlQs"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2021fall" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-IoVt1pdSKwF0nZmJ1eLa5q"
+                                                target="_blank"><strong>Fall 2021 |</strong> Virtual</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-IoVt1pdSKwF0nZmJ1eLa5q"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </details>
+                                <details id="20202021">
+                                    <summary>2020 – 2021</summary>
+                                    <div id="2021spring" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-Kjf3Lgg5WleicHqmcSZUkh"
+                                                target="_blank"><strong>Spring 2021 |</strong> Virtual</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-Kjf3Lgg5WleicHqmcSZUkh"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2021winter" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-L2YEb4qBbqdlcPsGOmXNHq"
+                                                target="_blank"><strong>Winter 2021 |</strong> Virtual</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-L2YEb4qBbqdlcPsGOmXNHq"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </details>
+                                <details id="20192020">
+                                    <summary>2019 – 2020</summary>
+                                    <div id="2020spring" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-K3e1he_Q4XqpZFOFiyAdnv"
+                                                target="_blank"><strong>Spring 2020 |</strong> TIO at Home</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-K3e1he_Q4XqpZFOFiyAdnv"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2020winter" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-It0HnFoo2sUYOepK3TS3Me"
+                                                target="_blank"><strong>Winter 2020 |</strong> March 7, 2020</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-It0HnFoo2sUYOepK3TS3Me"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2019fall" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-IHpGwiTzFoaToXw5Gwf82Q"
+                                                target="_blank"><strong>Fall 2019 |</strong> November 24, 2019</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-IHpGwiTzFoaToXw5Gwf82Q"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </details>
+                                <details id="20182019">
+                                    <summary>2018 – 2019</summary>
+                                    <div id="2019spring" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-LqWWgOD9CYjgySoHhWftOC"
+                                                target="_blank"><strong>Spring 2019 |</strong> June 1, 2019</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-LqWWgOD9CYjgySoHhWftOC"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2019winter" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-IDK7o94Wz8ekHSA9dU91Cn"
+                                                target="_blank"><strong>Winter 2019 |</strong> March 9, 2019</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-IDK7o94Wz8ekHSA9dU91Cn"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2018fall" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-JaEQdCdGweKQhzPXaLSC9M"
+                                                target="_blank"><strong>Fall 2018 |</strong> December 1, 2018</a></h4>
+                                        <div class="resp-container">
+                                            <!-- <p><em>Coming Soon</em></p> -->
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-JaEQdCdGweKQhzPXaLSC9M"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </details>
+                                <details id="20172018">
+                                    <summary>2017 – 2018</summary>
+                                    <div id="2018spring" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-KsR3CREgMbopugVL98kTl9"
+                                                target="_blank"><strong>Spring 2018 |</strong> June 3, 2018</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-KsR3CREgMbopugVL98kTl9"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2018winter" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-KbsMX86soxBTD6g-S6xkUt"
+                                                target="_blank"><strong>Winter 2018 |</strong> March 10, 2018</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-KbsMX86soxBTD6g-S6xkUt"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2017fall" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-Ii4obtu0BDUVZ9zrc2hpem"
+                                                target="_blank"><strong>Fall 2017 |</strong> December 6, 2017</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-Ii4obtu0BDUVZ9zrc2hpem"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </details>
+                                <details id="20162017">
+                                    <summary>2016 – 2017</summary>
+                                    <div id="2017spring" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-KqsLlaP_EVkzRCVKZwZfca"
+                                                target="_blank"><strong>Spring 2017 |</strong> June 1, 2017</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-KqsLlaP_EVkzRCVKZwZfca"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2017winter" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-L1NCtmKT2qhGxKQ-MfaaTt"
+                                                target="_blank"><strong>Winter 2017 |</strong> March 8, 2017</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-L1NCtmKT2qhGxKQ-MfaaTt"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+    
+                                    <div id="2016fall" class="scrolly-section">
+                                        <p>&nbsp;</p>
+                                        <h4><a
+                                                href="https://www.youtube.com/playlist?list=PLhiWfYIxxD-I25uzz_EBiKef3ISjVEdjN"
+                                                target="_blank"><strong>Fall 2016 |</strong> November 26, 2016</a></h4>
+                                        <div class="resp-container">
+                                            <iframe class="resp-iframe" loading="lazy"
+                                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLhiWfYIxxD-I25uzz_EBiKef3ISjVEdjN"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer role="contentinfo" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Contact -->
+                        <section class="contact">
+                            <header>
+                                <h3>Bringing music out from the screen and into tangible space, live.</h3>
+                            </header>
+                            <p>Contact us at <a href="mailto:intermissionUCSD@gmail.com">intermissionUCSD@gmail.com</a>
+                                or on any of our <a href="https://tiosocialmedia.carrd.co/"
+                                    target="_blank">social media platforms</a>.</p>
+                            <ul class="icons">
+                                <li><a href="https://www.youtube.com/IntermissionOrchestraatUCSD" target="_blank"><i
+                                            class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://www.facebook.com/IntermissionUCSD" target="_blank"><i
+                                            class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/TIOatUCSD" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.twitch.tv/IntermissionUCSD" target="_blank"><i
+                                            class="fa-brands fa-twitch"></i></a></li>
+                                <li><a href="https://space.bilibili.com/3546719130225321" target="_blank"><i
+                                            class="fa-brands fa-bilibili"></i></a></li>
+                                <li><a href="./search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            </ul>
+                        </section>
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            &copy;
+                            <span id="copyright-year">
+                                <script>document.getElementById('copyright-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                            </span>
+                            The Intermission Orchestra at UC San Diego.
+                        </div>
+                    </div>
+                </div>
+                <!-- GTranslate widget -->
+                <div class="gtranslate_wrapper" style="color: #61a09a;"></div>
+                <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","zh-CN","zh-TW","ja","ko","id","th","tl","vi","de","fr","pt","es","ru"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom","flag_style":"3d","alt_flags":{"en":"usa"}}</script>
+                <script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+            </div>
+        </footer>
+    </div> <!-- End of page wrapper -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"
+        integrity="sha512-ugEhUBPC3XfTEBbRia5d9er1tFe5N4yzwQr3xrNSTfmT09xe0fwYxgfDSLwUKCnFoFtLd5rJBZP5tdfcUzLNvw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/browser.min.js"></script>
+    <script src="./assets/js/breakpoints.min.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        var checkbox = $("#checkbox");
+        var bannerLogo = $("#banner2");
+        if (document.documentElement.getAttribute('data-theme') === 'dark') {
+            checkbox.prop('checked', true);
+        }
+        else {
+            checkbox.prop('checked', false);
+        }
+        // when checkbox is clicked
+        checkbox.click(function () {
+            if (checkbox.prop("checked")) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                window.localStorage.setItem('theme', 'dark');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                window.localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+    <script>
+        // Accordion toggling
+        $('details summary').each(function() {
+            var accordion = $(this).nextAll().wrapAll('<div></div>').parent();
+            // Hide elements that are not open by default
+            if(!$(this).parent('details').attr('open'))
+                accordion.hide();
+            $(this).click(function(event) {
+                event.preventDefault();
+                if($(this).parent('details').attr('open')) {
+                    accordion.slideUp(function() {
+                        // Remove the open attribute after sliding, so the animation is visible in browsers supporting the <details> element
+                        $(this).parent('details').removeAttr('open');
+                    });
+                } else {
+                    // Add the open attribute before sliding down, so the animation is visible in browsers supporting the <details> element
+                    $(this).parent('details').attr('open', true);
+                    accordion.slideDown();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

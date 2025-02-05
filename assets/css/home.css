@@ -1,0 +1,178 @@
+/*!
+* Copyright (c) 2024, The Intermission Orchestra at UC San Diego.
+*
+* home.css is styling specific to /index.html page.
+* If you make changes to this file, please run the command `npm run build:css`
+* in your terminal to update the respective minified .css file in /dist.
+*/
+#header .button {
+  display: none;
+}
+@media screen and (max-width: 736px) {
+  #header .button {
+    display: inline-block;
+    background-image: url("../../images/TIO_profile2-1-circle.png");
+    background-size: cover;
+    background-color: rgba(27, 27, 27, 0);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 0 10px;
+    border-radius: 100%;
+    width: 8em;
+    height: 8em;
+    z-index: 1;
+    -webkit-animation: bounce 0.5s;
+    animation: bounce 0.5s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 1);
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 1);
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 0;
+}
+.carousel .forward,
+.carousel .backward {
+  position: absolute;
+  top: 50%;
+  width: 6em;
+  height: 12em;
+  margin-top: -6em;
+  cursor: pointer;
+}
+.carousel .forward:before,
+.carousel .backward:before {
+  content: "";
+  display: block;
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  background-color: rgba(72, 57, 73, 0.5);
+  position: absolute;
+  top: 50%;
+  margin-top: -3em;
+  transition: background-color 0.35s ease-in-out;
+}
+.carousel .forward:after,
+.carousel .backward:after {
+  content: "";
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: 50%;
+  margin: -1.5em 0 0 0;
+  background: url("images/arrow.svg") no-repeat center center;
+}
+.carousel .forward:hover:before,
+.carousel .backward:hover:before {
+  background-color: rgba(8, 190, 213, 0.7);
+}
+.carousel .forward {
+  right: 0;
+}
+.carousel .forward:before {
+  right: -3em;
+}
+.carousel .forward:after {
+  right: -0.25em;
+}
+.carousel .backward {
+  left: 0;
+}
+.carousel .backward:before {
+  left: -3em;
+}
+.carousel .backward:after {
+  left: -0.25em;
+  transform: scaleX(-1);
+}
+.carousel .reel {
+  white-space: nowrap;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  padding: 2em;
+}
+.carousel article {
+  display: inline-block;
+  width: 18em;
+  background: var(--tio-white);
+  text-align: center;
+  padding: 0 1em 1.5em 1em;
+  margin: 0 2em 0 0;
+  white-space: nowrap;
+  opacity: 1;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.75s ease-in-out;
+}
+.carousel article.loading {
+  opacity: 0;
+}
+.carousel article .image {
+  position: relative;
+  left: -1em;
+  top: 0;
+  width: auto;
+  margin-right: -2em;
+  margin-bottom: 1.5em;
+}
+.carousel article p {
+  text-align: center;
+}
+@media screen and (max-width: 1680px) {
+  .carousel {
+    padding: 0;
+  }
+  .carousel .reel {
+    padding: 1.5em;
+  }
+  .carousel article {
+    width: 18em;
+    margin: 0 1.25em 0 0;
+  }
+}
+@media screen and (max-width: 840px) {
+  .carousel {
+    padding: 0;
+  }
+  .carousel article {
+    width: 18em;
+    margin: 0 1em 0 0;
+  }
+}
+@media screen and (max-width: 736px) {
+  .carousel {
+    padding: 0;
+  }
+  .carousel .reel {
+    padding: 1em;
+  }
+  .carousel article {
+    width: 18em;
+    padding-bottom: 2em;
+    margin: 0 0.75em 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  }
+  .carousel article .image {
+    margin-bottom: 2em;
+  }
+}

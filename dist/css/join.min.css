@@ -1,0 +1,7 @@
+/*!
+* Copyright (c) 2024, The Intermission Orchestra at UC San Diego.
+*
+* join.css is styling specific to /join.html page.
+* If you make changes to this file, please run the command `npm run build:css`
+* in your terminal to update the respective minified .css file in /dist.
+*/.join-fig{text-align:center}.join-fig .image{border-radius:10px;box-shadow:0 3px 3px rgba(0,0,0,.25);width:65%}.join-fig>figcaption{color:var(--tio-white);font-size:small;margin-top:-3em;position:relative;text-shadow:-1px -1px 4px var(--tio-black),1px -1px 4px var(--tio-black),-1px 1px 4px var(--tio-black),1px 1px 4px var(--tio-black),-1px 0 4px var(--tio-black),1px 0 4px var(--tio-black),0 -1px 4px var(--tio-black),0 1px 4px var(--tio-black)}@media screen and (max-width:736px){.join-fig .image{width:100%}}#sidebar .button{width:100%}#saxolotl{text-align:center}#saxolotl>img{padding-top:20px;width:30%}#saxolotl>img:hover{animation:rotation 1.5s linear infinite;cursor:pointer}#saxolotl>figcaption{font-size:small}@keyframes rotation{0%{transform:rotate(0deg)}25%{transform:rotate(12deg)}50%{transform:rotate(0deg)}75%{transform:rotate(-12deg)}to{transform:rotate(0deg)}}@media screen and (min-width:736px){#sidebar{padding-top:6em}#sidebar>section{position:sticky;top:6em}#saxolotl>img{width:60%}}

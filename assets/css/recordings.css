@@ -1,0 +1,172 @@
+/*!
+* Copyright (c) 2024, The Intermission Orchestra at UC San Diego.
+*
+* recordings.css is styling specific to /recordings.html page.
+* If you make changes to this file, please run the command `npm run build:css`
+* in your terminal to update the respective minified .css file in /dist.
+*/
+details {
+  padding-bottom: 1em;
+}
+details > * {
+  padding: 0.75rem;
+}
+details > div {
+  background: var(--theme-background);
+}
+summary {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--tio-white);
+  background: var(--accordion);
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out,
+    border-bottom-color 0.35s ease-in-out;
+  text-indent: 0;
+}
+details:not([open]) summary:hover {
+  background: var(--accordion-hover);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+  color: var(--tio-black);
+}
+details:not([open]) summary:hover::before {
+  background: conic-gradient(
+      from 90deg at 26% 26%,
+      #0000 90deg,
+      var(--tio-black) 0
+    )
+    100% 100%/58% 58%;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::marker {
+  content: "";
+}
+summary::before {
+  content: "";
+  position: absolute;
+  inset: 0.75rem;
+  left: auto;
+  aspect-ratio: 1;
+  background: conic-gradient(
+      from 90deg at 26% 26%,
+      #0000 90deg,
+      var(--tio-white) 0
+    )
+    100% 100%/58% 58%;
+  -webkit-clip-path: inset(1px);
+  clip-path: inset(1px);
+  transition: 0.3s;
+}
+details[open] {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 0 10px;
+  margin-bottom: 2em;
+  border: 0.5px solid var(--button);
+}
+details[open] summary::before {
+  transform: rotate(45deg);
+  background: conic-gradient(
+      from 90deg at 26% 26%,
+      #0000 90deg,
+      var(--theme-text) 0
+    )
+    100% 100%/58% 58%;
+}
+details[open] summary {
+  color: var(--theme-text);
+  background: var(--theme-background);
+  border-bottom: 2px solid var(--theme-text);
+  transition: 0.3s;
+}
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding-top: 0.5em;
+}
+#sidebar ul {
+  list-style-type: none;
+}
+details h4 {
+  text-align: center;
+}
+.button {
+  width: 100%;
+  background-color: var(--button);
+}
+#tio-noface {
+  text-align: center;
+}
+#tio-noface > img {
+  width: 20%;
+  padding-top: 20px;
+}
+#tio-noface > img:hover {
+  cursor: pointer;
+  -webkit-animation: rotation 1.5s infinite linear;
+  animation: rotation 1.5s infinite linear;
+}
+#tio-noface > figcaption {
+  font-size: small;
+}
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(12deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-12deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(12deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media screen and (min-width: 736px) {
+  #sidebar {
+    padding-top: 5.5em;
+  }
+  #sidebar > section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 6em;
+  }
+  .button,
+  #tio-noface {
+    width: 90%;
+  }
+  #tio-noface > img {
+    width: 60%;
+  }
+}

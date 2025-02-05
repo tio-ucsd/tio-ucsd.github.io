@@ -1,0 +1,108 @@
+/*!
+* Copyright (c) 2024, The Intermission Orchestra at UC San Diego.
+*
+* about.css is styling specific to /about.html page.
+* If you make changes to this file, please run the command `npm run build:css`
+* in your terminal to update the respective minified .css file in /dist.
+*/
+#gallery-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+.about-slides img {
+  border-radius: 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.about-slides .text {
+  display: none;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination > .prev,
+.pagination > .next {
+  width: 6em;
+  cursor: pointer;
+}
+.pagination > .prev:hover {
+  color: var(--button-hover);
+  -webkit-animation: x-left 0.5s;
+  animation: x-left 0.5s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 1);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 1);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes x-left {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-8px, 0, 0);
+  }
+}
+@keyframes x-left {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-8px, 0, 0);
+  }
+}
+.pagination > .next:hover {
+  color: var(--button-hover);
+  -webkit-animation: x-right 0.5s;
+  animation: x-right 0.5s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 1);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 1);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes x-right {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+@keyframes x-right {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+.pagination > * {
+  white-space: nowrap;
+  padding-top: 25px;
+}
+#slideshow {
+  position: relative;
+}
+#gallery-footer {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--tio-white);
+  text-align: center;
+  text-shadow: -1px -1px 4px var(--tio-black), 1px -1px 4px var(--tio-black),
+    -1px 1px 4px var(--tio-black), 1px 1px 4px var(--tio-black),
+    -1px 0 4px var(--tio-black), 1px 0 4px var(--tio-black),
+    0 -1px 4px var(--tio-black), 0 1px 4px var(--tio-black);
+}
+@media screen and (max-width: 736px) {
+  .pagination > #page-info {
+    font-size: small;
+  }
+}

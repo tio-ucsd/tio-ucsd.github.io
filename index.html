@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<!--
+	Copyright (c) 2024, The Intermission Orchestra at UC San Diego.
+-->
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <!-- Google tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXFW5Z53DW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PXFW5Z53DW');
+    </script>
+
+    <!-- TIO metadata -->
+    <title>The Intermission Orchestra at UC San Diego</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfcfc" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#272727" />
+    <meta name="description" content="The Intermission Orchestra is a student-run organization dedicated to playing music from video games, anime, and films. We hold concerts at the end of every quarter and perform at events such as the Triton Gaming Expo, Winter GameFest, and Animefest.">
+    <meta name="keywords" content="The Intermission Orchestra, The Intermission Orchestra at UCSD, Intermission Orchestra, Intermission Orchestra at UCSD, TIO, TIO at UCSD, TIOatUCSD, UC San Diego, University of California San Diego, UCSD, UCSD Music, Music, Video Games, Video Game Music, Anime, Anime Music, Films, Film Music, Video Game Orchestra, Game Music Orchestra, Anime Orchestra, Anime Music Orchestra, Film Music Orchestra, Student Organization, Student Org, Org, Music Org, Student Orchestra, Student-run Orchestra, Ensemble, Symphonic Orchestra, Music Club, Music Club UCSD, UCSD Organization">
+    <meta name="google-site-verification" content="DnBSSuQPAfLCbP1mwSXYtu-etNUWe_JFHXwRZbDJPTU" />
+    <script>
+        const colorMode = () => {
+            // if localStorage preference exists
+            const localTheme = localStorage.getItem('theme');
+            if (localTheme) {
+                return localTheme;
+            }
+            // if OS preference exists
+            const mql = window.matchMedia('(prefers-color-scheme: dark)');
+            if (typeof mql.matches === 'boolean') {
+                return mql.matches ? 'dark' : 'light';
+            }
+            return 'light';
+        };
+        // set theme based on colorMode()
+        document.documentElement.setAttribute('data-theme', colorMode());
+    </script>
+    <link rel="canonical" href="./">
+    <link rel="icon" href="./images/TIO_profile2-1-circle.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,400,400i,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,400,400i,600">
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/home.min.css" />
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/noscript.css" />
+    </noscript>
+    <script defer src="https://kit.fontawesome.com/762f049bb9.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div role="banner" id="header">
+            <div id="header-background"></div>
+            <!-- Inner -->
+            <div class="inner">
+                <header>
+                    <h1><a href="./" id="logo" class="image logo"><img src="./images/banner_white_transparent.png"
+                                alt="Logo of the Intermission Orchestra at UC San Diego"></a>
+                    </h1>
+                    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+                </header>
+                <footer>
+                    <a href="#banner" class="button circled scrolly"></a>
+                </footer>
+            </div>
+            <!-- Nav -->
+            <nav role="navigation" id="nav">
+                <a href="./"><img id="nav-logo" src="./images/logo-light.png" alt="Intermission Orchestra logo"></a>
+                <ul>
+                    <li><a href="./" aria-current="page">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./upcoming.html">Upcoming</a></li>
+                    <li><a href="./recordings.html">Recordings</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div> <!-- End of Header -->
+
+        <!--Dark mode toggle-->
+        <div id="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                    <div id="letter-light"><i class="fa-solid fa-a"></i></div>
+                    <div id="letter-dark"><i class="fa-solid fa-a"></i></div>
+                </div>
+            </label>
+        </div>
+
+        <!-- Post-banner -->
+        <section id="banner" class="light-edition">
+            <header>
+                <h2>We are<br><strong>The Intermission Orchestra</strong><br>at UC San Diego.</h2>
+                <p>
+                    <em>A student-run organization dedicated to playing music from video games, anime, and films.</em>
+                </p>
+            </header>
+        </section>
+
+        <!-- Carousel -->
+        <section role="complementary" class="carousel">
+            <div class="reel" id="carousel-section">
+
+                <article class="light-edition">
+                    <a href="#" class="image featured"><iframe loading="lazy" width="100%" height="220"
+                            src="https://www.youtube-nocookie.com/embed/ENsUpsGRHm8" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></a>
+                    <header>
+                        <h3><a href="https://www.youtube.com/watch?v=ENsUpsGRHm8" target="_blank"><em>Oshi no Ko</em></a></h3>
+                    </header>
+                    <p>IDOL<br>Winter 2024</p>
+                </article>
+
+                <article class="light-edition">
+                    <a href="#" class="image featured"><iframe loading="lazy" width="100%" height="220"
+                            src="https://www.youtube-nocookie.com/embed/60sroTQGBgY" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></a>
+                    <header>
+                        <h3><a href="https://www.youtube.com/watch?v=60sroTQGBgY" target="_blank"><em>Ponyo</em></a></h3>
+                    </header>
+                    <p>Medley<br>Winter 2023</p>
+                </article>
+
+                <article class="light-edition">
+                    <a href="#" class="image featured"><iframe loading="lazy" width="100%" height="220"
+                            src="https://www.youtube-nocookie.com/embed/Gp-Nf46LSj0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></a>
+                    <header>
+                        <h3><a href="https://www.youtube.com/watch?v=Gp-Nf46LSj0" target="_blank"><em>Outer Wilds</em></a></h3>
+                    </header>
+                    <p>Travelers / 14.3 Billion Years<br>Fall 2021</p>
+                </article>
+
+                <article class="light-edition">
+                    <a href="#" class="image featured"><iframe loading="lazy" width="100%" height="220"
+                            src="https://www.youtube-nocookie.com/embed/jceUgX0sWgE" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></a>
+                    <header>
+                        <h3><a href="https://www.youtube.com/watch?v=jceUgX0sWgE" target="_blank"><em>Hunter x Hunter</em></a></h3>
+                    </header>
+                    <p>World of Adventurers<br>Winter 2020</p>
+                </article>
+
+                <article class="light-edition">
+                    <a href="#" class="image featured"><iframe loading="lazy" width="100%" height="220"
+                            src="https://www.youtube-nocookie.com/embed/GxrsAV1I7oo" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></a>
+                    <header>
+                        <h3><a href="https://www.youtube.com/watch?v=GxrsAV1I7oo" target="_blank"><em>Tsubasa Chronicles</em></a></h3>
+                    </header>
+                    <p>Medley<br>Spring 2019</p>
+                </article>
+
+                <article class="light-edition">
+                    <a href="#" class="image featured"><iframe loading="lazy" width="100%" height="220"
+                            src="https://www.youtube-nocookie.com/embed/YwDg8NkJxBI" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></a>
+                    <header>
+                        <h3><a href="https://www.youtube.com/watch?v=YwDg8NkJxBI" target="_blank"><em>Xenoblade Chronicles 2</em></a></h3>
+                    </header>
+                    <p>Suite<br>Fall 2018</p>
+                </article>
+            </div>
+        </section> <!-- End of Carousel -->
+
+        <!-- Main -->
+        <main role="main">
+            <div class="wrapper style2 light-edition" id="main-section">
+                <div class="container">
+                    <article id="main" class="special">
+                        <header>
+                            <h2>Upcoming Performances</h2>
+                        </header>
+                        <div class="row" style="padding-top: 1em; text-align: center">
+                            <article class="col-12 col-12-mobile special">
+                                <h3><a href="https://www.youtube.com/@TIOatUCSD/streams" target="_blank">Fall 2024 Concert</a></h3>
+                                <p style="padding-top: 0.5em; text-align: center">
+                                    Friday, December 6<br>
+                                    6 - 9 p.m.<br>
+                                    PC West Ballroom
+                                </p>
+                            </article>
+                            <!--<article class="col-6 col-12-mobile special">
+                                <h3><a href="https://www.youtube.com/@TIOatUCSD/streams" target="_blank">Spring 2024 Concert</a></h3>
+                                <p style="padding-top: 0.5em; text-align: center">
+                                    Tuesday, June 4<br>
+                                    6 - 9 p.m.<br>
+                                    PC West Ballroom
+                                </p>
+                            </article>-->
+                        </div>
+
+                        <footer>
+                            <a href="./upcoming.html" class="button">More</a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+
+            <div class="wrapper style2 light-edition" id="about-section">
+                <article id="main" class="container special">
+                    <a href="#about" class="image featured scrolly"><img id="banner2"
+                            src="./images/banner_black_transparent.png"
+                            alt="The Intermission Orchestra's banner logo" /></a>
+                    <section id="about">
+                        <header style="padding-top: 2em; text-align: center;">
+                            <h2>The background music is now the feature.</h2>
+                            <p>
+                                <em>In late 2015, four UCSD Music students banded together with a unifying idea: an ensemble
+                                dedicated to playing music from video games, anime, and films.</em>
+                            </p>
+                        </header>
+                        <p>
+                            That, along with the word "Intermission" in fancy font on a UCSD concert program, and The
+                            Intermission Ensemble was born. After the first concert in Spring 2016, our initial small
+                            ensemble
+                            expanded enough to necessitate a name change to The Intermission Orchestra. Today, we are a
+                            full symphonic orchestra that holds three concerts a year and performs at events such
+                            as the Triton Gaming Expo, Winter GameFest, and Animefest.
+                        </p>
+                        <p>We hope to bring music from your favorite media to life, as well as
+                            increase recognition for this genre of music.</p>
+                    </section>
+                    <footer>
+                        <a href="./about.html" class="button">Learn More</a>
+                    </footer>
+                </article>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer role="contentinfo" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Contact -->
+                        <section class="contact">
+                            <header>
+                                <h3>Bringing music out from the screen and into tangible space, live.</h3>
+                            </header>
+                            <p>Contact us at <a href="mailto:intermissionUCSD@gmail.com">intermissionUCSD@gmail.com</a>
+                                or on any of our <a href="https://tiosocialmedia.carrd.co/"
+                                target="_blank">social media platforms</a>.</p>
+                            <ul class="icons">
+                                <li><a href="https://www.youtube.com/IntermissionOrchestraatUCSD" target="_blank"><i
+                                            class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://www.facebook.com/IntermissionUCSD" target="_blank"><i
+                                            class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/TIOatUCSD" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.twitch.tv/IntermissionUCSD" target="_blank"><i
+                                            class="fa-brands fa-twitch"></i></a></li>
+                                <li><a href="https://space.bilibili.com/3546719130225321" target="_blank"><i
+                                            class="fa-brands fa-bilibili"></i></a></li>
+                                <li><a href="./search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            </ul>
+                        </section>
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            &copy;
+                            <span id="copyright-year">
+                                <script>document.getElementById('copyright-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                            </span>
+                            The Intermission Orchestra at UC San Diego.
+                        </div>
+                    </div>
+                </div>
+                <!-- GTranslate widget -->
+                <div class="gtranslate_wrapper" style="color: #61a09a;"></div>
+                <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","zh-CN","zh-TW","ja","ko","id","th","tl","vi","de","fr","pt","es","ru"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom","flag_style":"3d","alt_flags":{"en":"usa"}}</script>
+                <script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+            </div>
+        </footer>
+    </div> <!-- End of page wrapper -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"
+        integrity="sha512-ugEhUBPC3XfTEBbRia5d9er1tFe5N4yzwQr3xrNSTfmT09xe0fwYxgfDSLwUKCnFoFtLd5rJBZP5tdfcUzLNvw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"
+        integrity="sha512-eFxuATJvNeUrxxoS/5AeVi6X4wY6IdI9kAtRbuGyD2XTLoJ/R9uBce9lsf2UyvY0tQYlUkbs1wV9jhOPxANCzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/jquery.scrolly.min.js"></script>
+    <script src="./assets/js/browser.min.js"></script>
+    <script src="./assets/js/breakpoints.min.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script>
+        // Scrolly.
+        $(".scrolly").scrolly();
+        // Dark mode toggle.
+        var checkbox = $("#checkbox");
+        var bannerLogo = $("#banner2");
+        if (document.documentElement.getAttribute('data-theme') === 'dark') {
+            checkbox.prop('checked', true);
+            bannerLogo.prop('src', './images/banner_white_transparent.png');
+            bannerLogo.css({
+                "display": "block",
+                "width": "100%"
+            });
+        }
+        else {
+            checkbox.prop('checked', false);
+            bannerLogo.prop('src', './images/banner_black_transparent.png');
+            bannerLogo.css({
+                "display": "block",
+                "width": "100%"
+            });
+        }
+        // when checkbox is clicked
+        checkbox.click(function () {
+            if (checkbox.prop("checked")) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                window.localStorage.setItem('theme', 'dark');
+                bannerLogo.prop('src', './images/banner_white_transparent.png');
+                bannerLogo.css({
+                    "display": "block",
+                    "width": "100%"
+                });
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                window.localStorage.setItem('theme', 'light');
+                bannerLogo.prop('src', './images/banner_black_transparent.png');
+                bannerLogo.css({
+                    "display": "block",
+                    "width": "100%"
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
